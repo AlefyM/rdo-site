@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>RDO - Relatório Diário de Obra</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+        h1 { color: #c00; }
+        .form-group { margin-bottom: 10px; }
+        .animated-button:hover { transform: scale(1.05); transition: 0.3s; }
+    </style>
+</head>
+<body>
+    <img src="logo-cr.png" alt="Logo CR Construções" width="150">
+    <h1>Relatório Diário de Obra</h1>
+    <form>
+        <div class="form-group">
+            <label for="funcionarios">Quantidade de Funcionários por Função:</label><br>
+            <select id="funcionarios" name="funcionarios" multiple size="18">
+                <option>Engenheiro</option>
+                <option>Técnico em Edificações</option>
+                <option>Técnico em Segurança do Trabalho</option>
+                <option>Estagiário de Engenharia Civil</option>
+                <option>Estagiário de Segurança no Trabalho</option>
+                <option>Estagiário de Arquitetura</option>
+                <option>Estagiário de Técnico em Edificações</option>
+                <option>Pedreiro</option>
+                <option>Eletricista</option>
+                <option>Bombeiro Hidráulico</option>
+                <option>Carpinteiro</option>
+                <option>Armador</option>
+                <option>Servente</option>
+                <option>Rejuntadora</option>
+                <option>Meio Oficial de Pedreiro</option>
+                <option>Operador de Betoneira</option>
+                <option>Encarregado</option>
+                <option>Mestre de Obra</option>
+            </select>
+        </div>
+        <button type="button" class="animated-button">Gerar PDF</button>
+    </form>
+</body>
+</html>
