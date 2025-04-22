@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relatório Diário de Obra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo CR Construções" class="logo"/>
+    <h1>Relatório Diário de Obra</h1>
+  </header>
+  <main>
+    <form id="rdoForm">
+      <section>
+        <h2>Informações da Obra</h2>
+        <input type="text" placeholder="Nome da obra" required />
+        <input type="date" required />
+        <textarea placeholder="Endereço da obra"></textarea>
+      </section>
+      <section>
+        <h2>Condições Climáticas</h2>
+        <input type="text" placeholder="Ex: Ensolarado, Chuvoso..." required />
+      </section>
+      <section>
+        <h2>Atividades Executadas</h2>
+        <textarea placeholder="Descreva as atividades realizadas..."></textarea>
+      </section>
+      <section>
+        <h2>Ocorrências</h2>
+        <textarea placeholder="Relate ocorrências ou imprevistos..."></textarea>
+      </section>
+      <section>
+        <h2>Programação</h2>
+        <textarea placeholder="Programação para o próximo dia útil..."></textarea>
+      </section>
+      <section>
+        <h2>Quantidade de Funcionários por Função</h2>
+        <div class="funcoes">
+          <!-- Sample roles -->
+          <label>Engenheiro: <input type="number" min="0" /></label>
+          <label>Técnico em Edificações: <input type="number" min="0" /></label>
+          <label>Servente: <input type="number" min="0" /></label>
+          <label>Pedreiro: <input type="number" min="0" /></label>
+          <!-- Add more as needed -->
+        </div>
+      </section>
+      <section>
+        <h2>Upload de Fotos</h2>
+        <input type="file" accept="image/*" multiple />
+        <textarea placeholder="Comentários/legenda das fotos"></textarea>
+      </section>
+      <button type="submit">Pré-visualizar</button>
+    </form>
+  </main>
+</body>
+</html>
